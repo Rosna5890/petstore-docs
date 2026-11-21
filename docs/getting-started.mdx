@@ -1,0 +1,38 @@
+---
+title: Getting Started
+sidebar_position: 2
+---
+
+# Getting Started
+
+This guide shows you how to send your first request to the Document API.
+
+## Before you begin
+
+You need:
+
+- An API Key from your dashboard
+- A tool for sending requests, such as cURL or Postman
+
+## Send your first request
+
+Fetch a document by its ID:
+
+```bash
+curl -X GET https://api.example.com/v1/documents/doc_12345 \
+ -H "X-API-Key: YOUR_API_KEY"
+```
+
+A successful request returns '200' and the document:
+
+```json
+{
+    "id": "doc_12345",
+    "name": "Rental Agreement",
+    "status": "Pending"
+}
+```
+
+::tip
+Use the sandbox environment while you are testing, so you don't affect the real documents.
+::
