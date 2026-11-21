@@ -20,10 +20,10 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://rosna5890.github.io/petstore-docs/',
+  url: 'https://rosna5890.github.io',
+  baseUrl: '/petstore-docs/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/petstore-docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
