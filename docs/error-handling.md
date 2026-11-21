@@ -34,7 +34,7 @@ Errors return a JSON body that describes what went wrong:
 
 ## Handling Rate Limits
 
-The API allows 200 requests per minute for each API key. When you exceed the limit, the response includes a `Retry-After` header with the number of seconds to wait.
+The API allows 300 requests per minute for each API key. When you exceed the limit, the response includes a `Retry-After` header with the number of seconds to wait.
 
 :::tip
 Retry with increasing delays: wait 1 second, then 2, then 4. This is called exponential backoff, and it avoids hitting the limit again straight away.
